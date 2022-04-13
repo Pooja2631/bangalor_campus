@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About navgurukul</title>
+<link rel="stylesheet"  href="style.css">
+<header class="header">
+
+  <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oQbCDVOlhzbzIE2E-aB3uMXXfelAhgffKrq61YQ09XANRuoJoYc_IM0bqVA1KSiSDg&usqp=CAU"/></center>
+  <a href="about.html">About</a>
+  <a href="https://www.merakilearn.org/">Meraki</a>
+  <a href="https://admissions.navgurukul.org/">Admissions</a>
+  <a href="https://www.notion.so/NG-Job-Board-cc0fc74362214e4a8d31a061ad9559ba">Join</a>
+  <a href="https://navgurukul.org/donate.html">Donate</a>
+  <a href="https://navgurukul.org/faq.html">Faq</a>
+</header>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://media-exp1.licdn.com/dms/image/C5622AQH7eVjEtNXNjA/feedshare-shrink_800/0/1642235310520?e=1649894400&v=beta&t=XCEpPcye3Um4Ewwq1syFdaZ28UAF7Ij88sUWgbUHK6g" style="width:100%" height="500">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <img src="https://cdn-images-1.medium.com/fit/t/1600/480/1*oqbFUWLoDy5PHgAQznz_QQ.jpeg"style="width:100%" height="500">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://miro.medium.com/max/1200/1*QY8Hyua9arZATipgY6JUjg.jpeg" style="width:100%; height: 500;">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+          <center>
+            <h1>🙂About US🙂 </h1>
+            <h2><a href="index.html">About Us</h2></a>
+            <h5 class="para"> Started in 2016, Navgurukul runs one-year residential course 
+              <br>
+              for students from underserved and diverse communities. Students after pursuing 
+              <br>
+              our course are awarded Certificate in Software Programming.
+              <br>
+              The certificate is issued by DGT, Government of India as detailed by the MOU</h5>
+              <img src="https://media-exp1.licdn.com/dms/image/C5622AQH7eVjEtNXNjA/feedshare-shrink_800/0/1642235310520?e=1648684800&v=beta&t=eTvL3F3e5vMQ9gRxHMcaqdafRnZOg75yQICi2FQFBl0">
+          </center>
+
+          <section>
+          <center>
+          <div> 
+            <h1>Team</h1>
+            <span>
+            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFrISdo607Ieg/profile-displayphoto-shrink_200_200/0/1516789816007?e=1649894400&v=beta&t=CxJEkRaFQ8gNp4zVuSE2Fr8EdOVdPgh1R2XJk90oOAA" style="height: 150px; width: 150px;">
+            <h2>ABHISHEK GUPTA</h2>
+                <h3>CEO & Co-founder</h3>
+                <p>IITD 13 CS Graduate. Co-founded Zumbl.com and FranklyMe.
+                  <br>
+                  Zumbl was acquired and FranklyMe raised more than 2.6M$ 
+                   <br>
+                  from Matrix Partners and others. Was working with Education 
+                   <br>
+                  Department, Delhi Government before NavGurukul</p></span>
+            <img src="data:image/jpeg;base64,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">
+            <h2>NILAM KUMARI</h2>
+                <h3>Technical Associate, Bangalore</h3>
+               <p>Nilam belongs to Kishangan, Bihar. She has done her graduation.
+                 <br>
+                  Her father a small farmer. She wants to explore tech and non teach.
+                  <br>
+                  Currently she is working as an team member with Navgurukul and She
+                  <br>
+                   wants to work with girls.</p>
+              <img src="https://navgurukul.org/assets/img/main/shehnaz.jpeg" style="height: 150px; width: 150px;">
+
+
+              <h2>SHAHNAAZ NAAZMEEN</h2>
+                <h3>Tech Facility Incharge</h3>
+                <p>Shahnaaz hails from Gulberga, Karnataka. She joined NavGurukul a year back
+                  <br>
+                   where she found her dream to work with Youth in Technology domain.
+                   <br>
+                    While pursuing her course, she supported various students 
+                    <br>
+                    to prepare for their Aspirational jobs. Currently, she leads the
+                    <br>
+                     tech curriculum development in NavGurukul and manages the Pune campus.</p>
+                <img src="reena.jpeg" style="height: 150px; width: 150px;">
+
+
+                <h2>REENA KUMARI</h2>
+                  <h3>Tech Facility Incharge</h3>
+                <p>Reena belongs Kanapuri,U.P. She joined NavGurukul a year back
+                  <br>
+                   where she found her dream to work with Youth in Technology
+                   <br>
+                  domain. While pursuing her course, she supported various students
+                  <br>
+                   to prepare for their Aspirational jobs. Currently, she leads the
+                   <br>
+                    tech curriculum development in NavGurukul and manages the Bangalore campus.</p>
+
+                <img src="riya.jpeg"style="height:150px;width:150px;">
+                <h2>RIYA SINGH</h2>
+                   <h3>Tech Facility Incharge</h3>
+                <p> Riya belongs Dehli. She joined NavGurukul a year back
+                  <br>
+                   where she found her dream to work with Youth in Technology
+                   <br>
+                    domain. While pursuing her course, she supported various students
+                    <br>
+                     to prepare for their Aspirational jobs. Currently, she leads the
+                     <br>
+                    tech curriculum development in NavGurukul and manages the sarjapuri campus.</p>
+
+                <img src="ima.jpeg"style="height:150px;width:150px;">
+                <h2>SHWETA SHARMA</h2>
+                  <h3>Tech Facility Incharge</h3>
+                  <p>Shweta belongs Dehli. She joined NavGurukul a year back 
+                    <br>
+                    where she found her dream to work with Youth in Technology
+                    <br>
+                     domain. While pursuing her course, she supported various students
+                     <br>
+                      to prepare for their Aspirational jobs. Currently, she leads the 
+                      <br>
+                      tech curriculum development in NavGurukul and manages the Bangalore campus.</p>
+              </span>
+        </div>
+      </center>
+    </section>
+    <section>      
+      <div>
+        <br>
+        <center><h1>ADVISORS</h1></center>
+        <img src="https://pbs.twimg.com/profile_images/1364711612750307331/R9EuoWkU_400x400.jpg" style="height: 150px; width: 150;">
+        <h2>AAKANKSHA GAUR</h2>
+        <h3>Culture & Design</h3>
+        <p>A product designer working for people and culture at Wingify.
+          <br>
+          Aakanksha helps NavGurukul with people, performance and
+          <br>
+                       processes.</p>
+          <center><h1>EX-TEMA</h1></center>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGxZZe7rtZcWbMBIm3u3p9RdpUWORoaAb5C5C7VhKljd9FNhxNfwFrnk3_IM1MD69SCW8&usqp=CAU"style="height:150px;width:150px;" float:"center">
+          <h2>RISHABH VERMA</h2>
+          <h3>Ex-COO & Co-founder</h3>
+          <p>Rishabh headed Navgurukul as the COO until September 2019, and is
+            <br>
+             always going to,be with us a co-founder. You can read his note
+            <br>
+              here. At 21 he was part of the ,founding team of Airwoot.
+            <br>
+              He then took a break to spend a year travelling in
+            <br>
+             the mountains. Later Rishabh headed Technology for Grownout.<br>
+            </p>
+          <img src="data:image/jpeg;base64,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"style="height:150px;width:150;">
+           <h2>ANURADHA DASWANI</h2>
+           <h3>Founding Team Member</h3>
+           <p>BITS Pilani Graduate 2015. Worked as an analyst and data scientist
+             <br>
+             for a little above one year, before she recognised her aspiration to
+              <br>
+              learn psychology and work in the domain of learning and
+              <br>
+              education. She is currently pursuing her Masters in Psychology.</p>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnHIYLroJhzDoBqOnHVlsCwS2W_SANQTWbgA&usqp=CAU "style="height:150px;width:150; ">
+               <h2>SAVITA VERMA</h2>
+               <h3>Executive Assistant to CEO</h3>
+               <p>She is a content writer and serves as an EA to the CEO office. A
+                 <br>
+                 B.Com graduate, Savita is National level debater and passionate
+                  <br>
+                  about working on gender related and mental health issues.</p>
+      </div>
+    </section>
+
+</body>
+</html>
